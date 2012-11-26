@@ -54,6 +54,6 @@ do rm -fr racket-master/collects/${collect}; done;
 cd racket-master/src
 ./configure --prefix=/app/vendor --disable-docs --disable-gracket
 make -sj30
-make -sj30 plain-install
+PLT_SETUP_OPTIONS="-j 30" make -sj30 install
 
 mv /app/vendor $root/
