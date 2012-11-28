@@ -9,6 +9,6 @@ tar -zxf master.tar.gz
 cd racket-master/src
 ./configure --prefix=/app/vendor --disable-docs --disable-gracket
 make -sj30
-make -sj30 plain-install
+make -sj30 install
 
 cp -a /app/vendor $root/
