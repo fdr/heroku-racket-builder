@@ -49,7 +49,9 @@ sgl
 swindle
 teachpack
 wxme"
-do rm -r racket-master/collects/$collect; done;
+do;
+    rm -r racket-master/collects/$collect;
+done;
 
 cd racket-master/src
 ./configure --prefix=/app/vendor --disable-docs --disable-gracket
