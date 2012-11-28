@@ -11,4 +11,4 @@ cd racket-master/src
 make -sj30
 make -sj30 plain-install
 
-mv /app/vendor $root/
+cp -a /app/vendor $root/
